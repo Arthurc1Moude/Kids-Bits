@@ -1,2 +1,2 @@
 # Didn't Public!
-This project isn't public for every-one, it's on the first coding stage, please wait soon!
+This project isn't public for every-one, it's on the first programing stage, please wait soon!
