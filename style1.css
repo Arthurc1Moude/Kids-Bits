@@ -1,0 +1,130 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+#login-btn {
+    background: linear-gradient(45deg, #ff7e00, #ffb84d);
+}
+
+a#register-btn {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+    a#register-btn:hover {
+        color: #aad8ff;
+    }
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.notification-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+button.btn-green {
+    background-color: green;
+    color: white;
+    margin: 10px 5px;
+    padding: 10px;
+    width: 45%;
+}
+
+button.btn-blue {
+    background-color: blue;
+    color: white;
+    margin: 10px 5px;
+    padding: 10px;
+    width: 45%;
+}
+
+/* Ensure the buttons are horizontally aligned */
+.notification-content button {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.notification-content p {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* New CSS for horizontal button layout */
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .notification-content button {
+        display: inline-block;
+        width: 48%; /* Set width to slightly less than 50% to fit side by side with margin */
+        margin: 0 1%;
+    }
+
+/* Hover Effects */
+button:hover {
+    opacity: 0.9;
+}

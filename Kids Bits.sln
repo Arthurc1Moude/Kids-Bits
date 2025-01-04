@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sign in & Sign up Page", "Sign in & Sign up Page", "{08F235F0-43CE-4BF1-B9E6-6673474A1EB3}"
+	ProjectSection(SolutionItems) = preProject
+		login.html = login.html
+		script2.js = script2.js
+		style1.css = style1.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Home Page", "Home Page", "{20471B09-2CD4-43EC-91DB-7C45011CB652}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		script.js = script.js
+		style.css = style.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{74565B0B-B223-4A48-9894-FEF2A9BEE723}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,234 @@
+﻿/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root {
+    --background-color-light: #f0f0f0;
+    --background-color-dark: #2c3e50;
+    --text-color-light: #333;
+    --text-color-dark: #ecf0f1;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--background-color-dark);
+        color: var(--text-color-dark);
+    }
+}
+
+/* Taskbar */
+.taskbar {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.add-icon {
+    background-color: #f39c12;
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+    .add-icon:hover {
+        background-color: #e67e22;
+    }
+
+/* Menu */
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.menu-button {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .menu-button:hover {
+        background-color: #bdc3c7;
+    }
+
+/* Add Application Window */
+.add-app-window {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .add-app-window.show {
+        transform: translateX(0);
+    }
+
+    .add-app-window.hide {
+        transform: translateX(100%);
+    }
+
+.window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+    .close-btn:hover {
+        color: #e74c3c;
+    }
+
+/* Input Search Box */
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* App List */
+.app-list {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.app-item {
+    padding: 10px;
+    background-color: #34495e;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .app-item:hover {
+        background-color: #1abc9c;
+    }
+
+/* Buttons */
+.button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.green {
+    background-color: #2ecc71;
+    color: white;
+}
+
+    .green:hover {
+        background-color: #27ae60;
+    }
+
+.red {
+    background-color: #e74c3c;
+    color: white;
+}
+
+    .red:hover {
+        background-color: #c0392b;
+    }
+
+/* Desktop */
+.desktop {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.desktop-item {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+    .desktop-item:hover {
+        transform: scale(1.1);
+    }
+
+/* Folder Styles */
+.folder {
+    width: 100px;
+    height: 100px;
+    background-color: #9b59b6;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+    .folder:hover {
+        transform: scale(1.1);
+    }
+
+    .folder.open {
+        width: 200px;
+        height: 200px;
+        background-color: #8e44ad;
+    }
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

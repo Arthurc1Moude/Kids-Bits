@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Bits - Login</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div class="container">
+        <div class="login-box">
+            <h2>Login Student Account</h2>
+            <input type="text" id="username" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password" />
+            <button id="login-btn" onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <!-- Success/Error Notification -->
+    <div id="notification" class="notification">
+        <div class="notification-content">
+            <p id="notification-text"></p>
+            <button class="btn-green" onclick="closeNotification()">Confirm</button>
+            <button class="btn-blue" onclick="reloadPage()">Retry</button>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

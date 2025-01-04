@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Bits - Student Learning Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <div class="icon add-icon" id="addIcon">+</div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <div class="menu-button" id="addAppBtn">Add Application</div>
+        <div class="menu-button" id="addFolderBtn">Add Folder</div>
+    </div>
+
+    <!-- Add Application Window -->
+    <div class="add-app-window" id="addAppWindow">
+        <div class="window-header">
+            <h2>Add an Application</h2>
+            <div class="close-btn" id="closeAddAppWindow">×</div>
+        </div>
+        <input type="text" id="searchInput" placeholder="Search for an application">
+        <div class="app-list" id="appList">
+            <!-- Application items will be dynamically loaded here -->
+        </div>
+        <div class="window-footer">
+            <button class="button green" id="addApp">Add</button>
+            <button class="button red" id="cancelApp">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Desktop -->
+    <div class="desktop" id="desktop"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
